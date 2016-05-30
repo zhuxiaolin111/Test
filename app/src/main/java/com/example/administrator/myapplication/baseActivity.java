@@ -35,7 +35,7 @@ public abstract class baseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Toast.makeText(this, "点击了Home图标", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "已经第一页了", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
