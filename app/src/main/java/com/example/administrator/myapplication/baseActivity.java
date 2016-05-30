@@ -17,11 +17,11 @@ public abstract class baseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initContentView(savedInstanceState);
-        // setContentView(R.layout.toolbar);
+        //setContentView(R.layout.toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setTitle("地煞");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

@@ -21,7 +21,7 @@ public  class Zxl_11Activity extends baseActivity {
      String[] str = {"asd", "asc", "qq", "qw", "as", "asdf"};
 
 
-    @Override
+   @Override
     protected void initContentView(Bundle savedInstanceState) {
        // super.onCreate(savedInstanceState);
         setContentView(R.layout.zxl_11layout);
