@@ -21,11 +21,9 @@
         android:id="@+id/chaxun"
         android:onClick="findweather"/>
     <ListView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv">
-
-    </ListView>
+        android:id="@+id/lv"></ListView>
 
 
 
