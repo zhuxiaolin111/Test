@@ -20,7 +20,7 @@ public abstract class baseActivity extends AppCompatActivity {
         //setContentView(R.layout.toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("地煞");
+        toolbar.setTitle("地QQ煞");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
