@@ -10,6 +10,6 @@ public class login_Activity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.ex10_layout);
     }
 }

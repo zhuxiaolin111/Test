@@ -1,11 +1,15 @@
 package com.example.administrator.myapplication;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 
@@ -13,6 +17,7 @@ import android.widget.Toast;
  * Created by Administrator on 2016/5/26.
  */
 public abstract class baseActivity extends AppCompatActivity {
+    PopupMenu popm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +25,27 @@ public abstract class baseActivity extends AppCompatActivity {
         //setContentView(R.layout.toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.tool);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("地煞");
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId())
+                {
+                    case R.id.zuozhe:
+                        AlertDialog.Builder b = new AlertDialog.Builder(baseActivity.this);
+                        b.setTitle("作者");
+                        b.setMessage("朱晓琳");
+                        b.create().show();
+                        break;
+                    case R.id.fenxiang:
+                        Toast.makeText(baseActivity.this, "分享", Toast.LENGTH_SHORT).show();
+                }
+                return true;
+            }
+        });
+
+        getSupportActionBar().setTitle("地煞");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -35,8 +59,12 @@ public abstract class baseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Toast.makeText(this, "已经1", Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(this, HomeWork_Activity.class);
+                startActivity(intent);
+              //  Toast.makeText(this, "已经1", Toast.LENGTH_SHORT).show();
                 break;
+
         }
         return true;
     }
