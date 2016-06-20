@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="textcolor">#bebebe</color>
+	<color name="textcolor_checked">#45c01a</color>
+	<color name="main_tab_bg">#f7f7f8</color>
+</resources>

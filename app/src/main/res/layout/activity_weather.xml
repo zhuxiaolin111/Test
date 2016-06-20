@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherbg"
+    tools:context=".simallutil.WeatherActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="#ffffff"
+            android:text="HelloWorld" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:text="HelloWorld" />
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/date"
+            android:text="HelloWorld" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:layout_below="@id/city"
+            android:text="HelloWorld" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="当前温度:" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="℃" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="今日温度:" />
+
+            <TextView
+                android:id="@+id/templow"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="~" />
+
+            <TextView
+                android:id="@+id/temphigh"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="℃" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/winddirect"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="南风" />
+
+            <TextView
+                android:id="@+id/windpower"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="2级" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="天气更新时间:" />
+
+            <TextView
+                android:id="@+id/updatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="2016年5月13日 16:50:43" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:layout_below="@id/ll4" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>
