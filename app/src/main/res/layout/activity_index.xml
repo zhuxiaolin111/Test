@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".individuation.IndexActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/main_tab_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/main_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/hot_item"
+            style="@style/main_tab"
+            android:checked="true"
+            android:drawableTop="@drawable/hot_item_ready"
+            android:text="热门" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/classification_item"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/classification_ready"
+            android:text="分类" >
+        </RadioButton>
+		
+        <RadioButton
+            android:id="@+id/lingsheng_item"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/lingsheng_ready"
+            android:text="铃声" >
+        </RadioButton>
+        
+        <RadioButton
+            android:id="@+id/my_item"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/my_ready"
+            android:text="我的" >
+        </RadioButton>
+        
+    </RadioGroup>
+
+</LinearLayout>

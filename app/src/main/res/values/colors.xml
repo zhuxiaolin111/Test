@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3f51b5</color>
-    <color name="colorPrimaryDark">#303f9f</color>
-    <color name="colorAccent">#ff4081</color>
-    <color name="color1">#00ff00</color>
-    <color name="color2">#ff00ff</color>
-    <color name="color3">#0000ff</color>
-    <color name="color4">#ff0000</color>
-    <color name="color5">#ffffff00</color>
-    <color name="color6">#ff0ff0ff</color>
-
+	<color name="textcolor">#bebebe</color>
+	<color name="textcolor_checked">#45c01a</color>
+	<color name="main_tab_bg">#f7f7f8</color>
 </resources>
