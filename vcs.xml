@@ -22,6 +22,10 @@
           <option name="url" value="https://github.com/zhuxiaolin111/MyAndroid123.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/zhuxiaolin111/TEST123.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="F:\" />
